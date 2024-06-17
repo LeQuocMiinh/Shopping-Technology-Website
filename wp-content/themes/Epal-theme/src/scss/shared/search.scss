@@ -1,0 +1,113 @@
+.search {
+    #category-products {
+        .col-product-right {
+            .center-content-product {
+                div.list-search {
+                    grid-template-columns: 19% 19% 19% 19% 19%;
+                }
+            }
+        }
+    }
+
+    .active-account {
+        display: none;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .search {
+        #category-products {
+            .col-product-right {
+                .center-content-product {
+                    padding-bottom: 60px;
+                    div.list-search {
+                        grid-template-columns: 24% 24% 24% 24%;
+                    }
+                }
+            }
+        }
+
+        #menu-mobile-top {
+            margin: 0;
+            padding: 16px 0;
+            position: relative;
+            z-index: 1001;
+
+            &.fixed-top {
+                padding-top: 16px;
+                position: fixed !important;
+
+                .content {
+                    .top {
+                        .logo {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .content {
+                .top {
+                    .logo {
+                        .logo-img {
+                            .logo-main {
+                                display: none;
+                            }
+
+                            .logo-back {
+                                width: 20px;
+                            }
+                        }
+                    }
+
+                    .socials {
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .search {
+        #category-products {
+            .col-product-right {
+                .center-content-product {
+                    div.list-search {
+                        grid-template-columns: 32% 32% 32%;
+                    }
+                }
+            }
+        }
+
+        #menu-mobile-top {
+            .content {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .search.sm {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .search {
+        #category-products {
+            .col-product-right {
+                .center-content-product {
+                    div.list-search {
+                        grid-template-columns: 49% 49%;
+                    }
+                }
+            }
+        }
+    }
+}

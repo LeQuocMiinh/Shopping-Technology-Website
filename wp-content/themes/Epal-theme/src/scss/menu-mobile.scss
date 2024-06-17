@@ -1,0 +1,110 @@
+@media (max-width: 1024px) {
+  .btn-open {
+    top: 14%;
+    right: 9.3%;
+    z-index: 99;
+    display: flex !important;
+
+    #showRightPush {
+      height: 30px;
+      width: 40px;
+      position: relative;
+
+      &.active {
+        &:before {
+          transform: translate(0px, 12px) rotate(225deg);
+        }
+
+        &:after {
+          transform: translate(0, -12px) rotate(315deg);
+        }
+
+        .line-b {
+          transform: translate(0px, 0px) rotate(225deg);
+
+        }
+      }
+
+      &:after, &:before {
+        content: '';
+      }
+
+      .line-b, &:after, &:before {
+        width: 100%;
+        height: 6px;
+        background: #fff;
+        transition: .3s all linear;
+        display: inline-block;
+        border-radius: 2px;
+      }
+    }
+  }
+  .menu-menu {
+    height: 50px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    right: 0;
+    border-bottom: 2px solid #e93818;
+
+    .row {
+      display: block;
+    }
+
+    .menu {
+      display: block;
+
+      .menu-item {
+        position: relative;
+      }
+
+      > .menu-item > a {
+        width: 90%;
+        justify-content: flex-end;
+      }
+    }
+
+    .menu-item-has-children:after {
+      position: absolute;
+      top: 1.5rem;
+      right: 0;
+      width: 10%;
+      text-align: center;
+    }
+
+    .menu-active {
+      width: 50%;
+      min-width: 300px;
+      position: fixed;
+      left: -100%;
+      top: 50px;
+      bottom: 0;
+      background-color: #fff;
+      box-shadow: 3px 4px 11px 0 #454242;
+      transition: all 0.3s;
+
+      &.show-menu-mb {
+        left: 0;
+        transition: all 0.3s;
+      }
+    }
+
+    .sub-menu {
+      padding-left: 2rem !important;
+      display: none;
+      font-weight: 500;
+
+      a {
+        padding: 0.5rem !important;
+      }
+
+      .sub-menu {
+        display: block;
+
+        a {
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}

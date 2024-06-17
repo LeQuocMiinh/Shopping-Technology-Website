@@ -1,0 +1,216 @@
+section.menu-mobile-category {
+  position: fixed;
+  bottom: 62px;
+  width: 100%;
+  left: 0;
+  height: calc(100% - 62px);
+  background: #fff;
+  z-index: 99999;
+  transition: all 0.3s linear;
+  border-radius: 16px 16px 0px 0px;
+  opacity: 1;
+  transform: translateY(0px);
+  visibility: visible;
+  overflow: hidden;
+  &.hide {
+    opacity: 0;
+    transform: translateY(500px);
+    visibility: hidden;
+  }
+
+  .menu-mobile-category-heading {
+    padding: 16px;
+    position: relative;
+    border-bottom: 1px solid #0000000d;
+
+    h2 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 25.6px;
+      text-align: center;
+      color: #212b36;
+    }
+
+    img {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-55%);
+    }
+  }
+  .col-4 {
+    overflow: hidden;
+    padding-right: 8px;
+  }
+
+  .menu-custom-wrapper {
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    background: #fff;
+
+    .menu-custom {
+      padding-left: 15px;
+      background: #fff;
+      list-style-type: none;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 0;
+      height: calc(100vh - 62px);
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+        right: -5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #fbfbfb;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #e3e3e3;
+        border-radius: 10px;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.5s ease-in;
+        border-radius: 8px;
+        width: 82px;
+        overflow: hidden;
+        padding: 12px 14px;
+
+        &.active {
+          background: #f6f6f6;
+        }
+
+        img {
+          flex-shrink: 0;
+          width: 36.92px;
+          height: 24px;
+          margin: 0;
+        }
+
+        .menu-title {
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #383b46;
+        }
+      }
+    }
+  }
+
+  .col-8 {
+    padding-left: 0px;
+  }
+
+  .menu-mobile-category-sidebar-wrapper {
+    padding: 0;
+    overflow: hidden;
+    background: #fff;
+    border-left: 1px solid #0000000d;
+
+    .menu-mobile-category-sidebar {
+      background: #fff;
+      overflow-y: auto;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0 15px 0 0;
+      height: calc(93vh - 62px);
+
+      &::-webkit-scrollbar {
+        width: 5px;
+        position: absolute;
+        right: -5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #fbfbfb;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #e3e3e3;
+        border-radius: 10px;
+      }
+      .sub-menu-wrapper {
+        display: none;
+        &.active {
+          display: block;
+        }
+        .see-all {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #212b36;
+          border-bottom: 1px solid #0000000d;
+          padding: 10px 0 10px 8px;
+          img {
+            width: 30px;
+            height: 30px;
+            transform: translateX(5px);
+            flex-shrink: 0;
+          }
+        }
+        .sub-menu-mobile-2 {
+          list-style-type: none;
+          padding: 10px 0;
+          .menu-mobile-item-lv-2 {
+            padding: 8px 0;
+            &:not(:last-child) {
+              border-bottom: 1px solid #0000000d;
+            }
+            a {
+              padding: 8px;
+              color: #212b36;
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 24px;
+              text-transform: uppercase;
+            }
+            .sub-menu-mobile-3 {
+              margin: 8px 0;
+              list-style: none;
+              padding: 0;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 9px;
+              align-items: center;
+              .menu-mobile-item-lv-3 {
+                width: calc(100% / 2 - 4.5px);
+                border: 1px solid #e3e3e3;
+                border-radius: 8px;
+                padding: 8px 10px;
+
+                a {
+                  padding: 0;
+                  font-size: 14px;
+                  text-transform: capitalize;
+                  font-weight: 400;
+                  line-height: 24px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  display: -webkit-box;
+                  -webkit-box-orient: vertical;
+                  -webkit-line-clamp: 1;
+                  text-align: center;
+                  color: #212b36;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

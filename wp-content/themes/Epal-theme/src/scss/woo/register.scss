@@ -1,0 +1,290 @@
+#register {
+    // background: #ebeafc;
+    padding: 50px 0;
+
+    .register-form {
+        max-width: 579px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 32px;
+        background: #ffffff;
+        font-size: 14px;
+        border-radius: 8px;
+
+        .gap-9 {
+            gap: 9px;
+        }
+
+        .title-mobile {
+            display: none;
+        }
+
+        h4 {
+            color: #212B36;
+            font-size: 20px;
+            font-weight: 500;
+            margin-top: 24px;
+        }
+
+        .social-network {
+            margin-top: 24px;
+        }
+
+        .social {
+            text-align: center;
+            border-radius: 8px;
+            border: none;
+            padding: 14px 16px;
+            width: 50%;
+            color: #ffffff;
+            position: relative;
+
+            img {
+                width: auto;
+                height: 24px;
+                object-fit: contain;
+                position: absolute;
+                left: 25px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .google {
+            background: #EA4336;
+        }
+
+        .fb {
+            background: #1A77F2;
+        }
+
+        .other {
+            text-align: center;
+            color: #99A4AF;
+            margin: 24px 0;
+
+            hr {
+                background: #212B360D;
+                border-top-color: #212B360D;
+                border-right-color: #212B360D;
+                border-bottom-color: #212B360D;
+                border-left-color: #212B360D;
+                width: 100%;
+                margin: 12px 0;
+                height: 1px;
+                border: none;
+            }
+        }
+    }
+
+    form {
+        label {
+            font-size: 16px;
+            color: #212B36;
+            margin-bottom: 8px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        input {
+            border-radius: 10px;
+            border: 1px solid #E3E3E3;
+            border-radius: 10px;
+            padding: 14px 16px;
+            color: #212B36;
+            height: auto;
+            line-height: 1;
+            font-size: 16px;
+
+            &::placeholder {
+                color: #99A4AF;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+
+        input[type=number] {
+            -moz-appearance: textfield;
+
+            &::-webkit-outer-spin-button,
+            &::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+        }
+
+        button {
+            background: #1435C3;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            line-height: 1;
+            font-size: 16px;
+        }
+
+        .form-group {
+            position: relative;
+
+            img {
+                width: 16px;
+                height: 16px;
+                object-fit: contain;
+                margin-right: 4px;
+            }
+        }
+
+        .f-loading {
+            position: absolute;
+            right: 0;
+            border: 2px solid #ffffff;
+            border-right-color: transparent;
+            top: calc(50% - 14px);
+            left: calc(50% - 14px);
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    #form-register,
+    #form-lost-password {
+        .form-group {
+            display: flex;
+
+            button {
+                border-radius: 0px 10px 10px 0px;
+                width: 120px;
+            }
+
+            input {
+                width: calc(100% - 120px);
+                border-radius: 10px 0px 0px 10px;
+            }
+
+            .f-loading {
+                left: unset;
+                transform: none;
+                top: calc(50% - 14px);
+                right: calc(60px - 14px);
+            }
+        }
+    }
+
+    #form-register-accuracy,
+    #form-lost-password-accuracy {
+        label {
+            display: block;
+
+            &.form-group {
+                margin: 16px 0 25px;
+            }
+        }
+
+        .form-group {
+            gap: 10px;
+            justify-content: center;
+
+            input {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                padding: 14px 18px;
+            }
+        }
+
+        .f-button {
+            margin-top: 24px;
+        }
+
+        button {
+            min-width: 250px;
+        }
+    }
+
+    #create-account,
+    #change-password {
+        h4 {
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+
+        .form-group:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .f-button {
+            text-align: center;
+
+            button {
+                min-width: 250px;
+            }
+        }
+
+        label {
+            display: block;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+
+    #account-success {
+        h4 {
+            color: #1435C3;
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 24px;
+            color: #212B36;
+        }
+
+        a {
+            font-size: 16px;
+            color: #1435C3;
+
+            img {
+                height: 10px;
+                width: auto;
+                object-fit: contain;
+                margin-right: 5px;
+            }
+        }
+    }
+
+    #form-lost-password-accuracy {
+        margin-top: 24px;
+
+        a {
+            color: #1435C3;
+        }
+
+        .return {
+            margin-top: 32px;
+        }
+    }
+
+    #customer-lost-password {
+        h4 {
+            margin-top: 0;
+        }
+    }
+
+    .lost-password-text {
+        margin: 24px 0;
+
+        p {
+            margin-bottom: 0;
+            color: #737C87;
+        }
+    }
+}

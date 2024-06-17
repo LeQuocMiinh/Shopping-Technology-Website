@@ -1,0 +1,178 @@
+// Shared style for menu category in footer.php and banner.php
+
+.menu-custom-wrapper {
+    padding: 16px 20px;
+    width: 270px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #FFF;
+
+    .menu-custom {
+        height: 500px;
+        background: #fff;
+        list-style-type: none;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: 0;
+        padding-left: 0;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+            position: absolute;
+            right: -5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #FBFBFB;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #E3E3E3;
+            border-radius: 10px;
+        }
+
+        li {
+            display: flex;
+            align-items: center;
+            transition: .5s ease-in;
+            width: 100%;
+            padding: 13px 0;
+            border-radius: 8px;
+
+            &:hover {
+                background: #F6F6F6;
+
+                &>.sub-menu-wrapper {
+                    display: flex;
+                }
+            }
+
+            img {
+                width: 40px;
+                height: 24px;
+                margin-right: 10px;
+            }
+
+            .menu-title {
+                a {
+                    font-size: 1.4rem;
+                    font-weight: 500;
+                    line-height: 24px;
+                    color: #383B46;
+                }
+            }
+
+            .sub-menu-wrapper {
+                background: #FFF;
+                position: absolute;
+                display: none;
+                right: -15px;
+                bottom: 0;
+                top: 10px;
+                flex-direction: column;
+                padding-top: 40px;
+                padding-right: 65px;
+                padding-left: 65px;
+                width: calc(100% - 246px);
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                overflow-y: auto;
+
+                &.active {
+                    top: 0;
+                }
+
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    position: absolute;
+                    right: -5px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: #FBFBFB;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background: #E3E3E3;
+                    border-radius: 10px;
+                }
+
+                &>a {
+                    color: #1435C3;
+
+                    img {
+                        max-width: 12px;
+                    }
+                }
+
+                .sub-menu-mobile-2 {
+                    padding: 0;
+                    display: flex;
+                    min-height: 100%;
+                    border-radius: 0 10px 10px 0;
+                    list-style-type: none;
+                    margin: 0;
+                    gap: 60px;
+                    transition: 0.5s ease-in;
+                    flex-wrap: wrap;
+
+                    &>li {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: unset;
+                        padding: unset;
+                        width: 14%;
+
+                        &:hover {
+                            background-color: inherit;
+                        }
+
+                        &>a {
+                            color: #212B36;
+                            font-size: 1.4rem;
+                            font-weight: 500;
+                            transition: 0.3s ease-in;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                color: #1F3DBD !important;
+                            }
+                        }
+
+                        .sub-menu-mobile-3 {
+                            width: 100%;
+                            list-style: none;
+                            padding: 10px 0 0 0;
+                            margin: 0;
+
+                            &>li {
+                                padding: unset;
+                                padding-bottom: 10px;
+
+                                &:last-child {
+                                    padding-bottom: 0;
+                                }
+
+                                &:hover {
+                                    background-color: inherit;
+                                }
+
+                                &>a {
+                                    color: #737C87;
+                                    font-size: 1.4rem;
+                                    font-weight: 400;
+                                    transition: 0.3s ease-in;
+
+                                    &:hover {
+                                        color: #1F3DBD !important;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

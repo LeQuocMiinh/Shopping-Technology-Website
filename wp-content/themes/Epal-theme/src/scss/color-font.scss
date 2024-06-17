@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700;800;900&display=swap');
+
+$black: #1b1b1b;
+$gray: #878787;
+$orange: #fdb813;
+$red: #e50000;
+$yellow: #fdba1a;
+$blue: #007eff;
+$green: #3febdb;
+
+/**
+color
+ */
+.color-666{
+  color: #666;
+}
+.color-black{
+  color: $black;
+}
+.color-gray{
+  color: $gray;
+}
+.color-organe{
+  color: $orange;
+}
+.color-red{
+  color: $red;
+}
+.color-yellow{
+  color: $yellow;
+}
+/**
+background-color
+ */
+.bg-black{
+  background-color: $black;
+}
+.bg-gray {
+  background-color: $gray;
+}
+.bg-organe{
+  background-color: $orange;
+}
+.bg-red{
+  background-color: $red;
+}
+.bg-yellow{
+  background-color: $yellow;
+}
+/**
+font
+ */
+.regular{
+  font-weight: 400;
+}
+.light{
+  font-weight: 300;
+}
+.medium {
+  font-weight: 500;
+}
+.bold{
+  font-weight: 700;
+}
+.italic{
+  font-style: italic;
+}
+/**
+font size
+ */
+.fs-10{
+  font-size: 1rem;
+}
+.fs-12{
+  font-size: 1.2rem;
+}
+.fs-14{
+  font-size: 1.4rem;
+}
+.fs-16{
+  font-size: 1.6rem;
+}
+.fs-18{
+  font-size: 1.8rem;
+}
+.fs-20{
+  font-size: 2rem;
+}
+.fs-24{
+  font-size: 2.4rem;
+}

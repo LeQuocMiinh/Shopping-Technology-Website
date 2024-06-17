@@ -1,0 +1,61 @@
+@charset "utf-8";
+@import "color-font";
+@import "class-gen";
+@import "error-404";
+@import "style";
+@import "reponsive";
+
+//Homepage
+@import "page/homepage/banner";
+@import "page/homepage/feature-categories";
+@import "page/homepage/news-main";
+@import "page/homepage/main-content";
+@import "page/homepage/feature-program";
+
+// Woocommerce
+@import "woo/cart";
+@import "woo/checkout";
+@import "woo/reponsive";
+@import "woo/myaccount";
+@import "woo/register";
+@import "woo/my-address";
+@import "woo/orders";
+@import "woo/thankyou";
+
+//Shared option
+@import "shared/footer";
+@import "shared/menu-main";
+@import "shared/menu-category";
+@import "shared/cart-hover";
+@import "shared/sidebar-news";
+@import "shared/breadcrumb";
+@import "shared/sidebar-support";
+@import "shared/menu-mobile-category";
+
+//Danh mục sản phẩm
+@import "page/category/category";
+@import "page/category/reponsive";
+
+//Chi tiết sản phẩm
+@import "page/single/single";
+@import "page/single/reponsive";
+
+//Tin tức
+@import "page/news/news";
+@import "page/news/news-single";
+@import "page/news/reponsive";
+
+//Chính sách hỗ trợ
+@import "page/support/tpl-support";
+@import "page/support/reponsive";
+
+//Liên hệ
+@import "page/contact/tpl-contact";
+@import "page/contact/reponsive";
+
+//Checkout
+@import "page/checkout/checkout";
+@import "page/checkout/reponsive";
+
+//search
+@import "shared/search";

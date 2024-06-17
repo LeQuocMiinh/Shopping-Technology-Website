@@ -1,0 +1,108 @@
+@media (max-width: 992px) {
+    .page-template-default {
+        #menu-mobile-top {
+            display: none;
+        }
+
+        #primary {
+            .title-mobile {
+
+                padding: 16px !important;
+            }
+
+            .default-content {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .page-template-tpl-support-mobile {
+        background: #fff;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+
+        #menu-mobile-top {
+            display: none;
+        }
+
+        .sidebar-support {
+            .title-mobile {
+                padding: 16px !important;
+                border-top-left-radius: 24px;
+                border-top-right-radius: 24px;
+                background: #fff;
+            }
+
+            .sidebar-support-wrapper {
+                display: flex;
+
+                .box-support {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    transition: all 0.3s linear;
+                    border-bottom: 1px solid rgba(0, 0, 0, 0.0509803922);
+
+                    .sidebar-support-item {
+                        padding: 10px 16px 10px 16px;
+                        border: none;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                    img {
+                        width: 22px;
+                    }
+                }
+            }
+        }
+    }
+
+    .page-template-tpl-support {
+        background: #fff;
+        padding-bottom: 70px;
+
+
+        #menu-mobile-top {
+            display: none;
+        }
+
+        #support {
+            padding-top: 24px;
+            padding-bottom: 70px;
+
+            .item-sidebar-mb {
+                display: none;
+            }
+
+            .title-mobile {
+                padding: 0 16px 16px 16px !important;
+            }
+
+            .woocommerce-breadcrumb {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .page-template-tpl-support {
+        #support {
+            padding-top: 5px;
+
+            .post-content{
+                padding: 0 16px 16px 16px;
+            }
+            .col-lg-9 {
+                .title {
+                    margin-top: 16px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+/*------------------------ Error 404------------------------*/
+#error{
+  padding: 40px 0;
+  text-align: center;
+}
+.error_title{
+  color: #000;
+}
+.error_title p{
+  color: #ed3d3f;
+  font-size: 18px;
+  margin: 0;
+  padding-top: 20px;
+}
+.error_title img{
+  Padding-top: 50px;
+  width: 100%;
+  max-width: 200px;
+}
+.error_bottom{
+  margin-top: 15px;
+}
+.error_bottom a{
+  display: inline-block;
+  padding: 10px 30px;
+  color: #fff;
+  background: #ed3d3f;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  text-decoration: none;
+}
+/*------------------------ END Error 404------------------------*/

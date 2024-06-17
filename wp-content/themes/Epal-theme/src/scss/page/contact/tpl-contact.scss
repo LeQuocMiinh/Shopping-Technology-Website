@@ -1,0 +1,87 @@
+#contact-page {
+  .contact-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32.4px;
+      color: #212b36;
+      margin-bottom: 24px;
+    }
+    .desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21.6px;
+      text-align: center;
+      color: #212b36;
+      max-width: 551px;
+    }
+  }
+
+  #contact-form {
+    .acf-form {
+      .acf-fields {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .acf-field {
+          border: none;
+          padding: 0;
+          input,
+          textarea {
+            border: 1px solid #e3e3e3;
+            outline: none;
+            padding: 10px 16px 10px 16px;
+            border-radius: 10px;
+          }
+          textarea {
+            height: 80px;
+          }
+        }
+
+        .acf-form-submit {
+          display: flex;
+          justify-content: center;
+          button {
+            background: #1435c3;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19.36px;
+            text-align: center;
+            color: #ffffff;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            max-width: 253px;
+            width: 100%;
+          }
+        }
+      }
+
+      .af-success {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: center;
+        color: #212b36;
+        margin-top: 15%;
+      }
+    }
+  }
+
+  .google-map {
+    width: 100%;
+    height: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,427 @@
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#contact-form .-dismiss {
+  display: none !important;
+}
+
+input.no-notifi {
+  border: 1px solid red !important;
+}
+
+.fixed-top {
+  position: fixed !important;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #333;
+  line-height: 1.5;
+  overflow-x: hidden;
+  transition: all ease 0.3s;
+  background: #fafbff;
+  padding: 0 !important;
+
+  &.archive {
+    background-color: #fafbff;
+  }
+}
+
+body.page-template-tpl-home {
+  background: #fafbff;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+figure {
+  margin: auto;
+  max-width: 600px;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(/wp-content/themes/Epal-theme/src/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.container {
+  max-width: 1296px;
+}
+
+.single-product .woocommerce-breadcrumb {
+  display: none;
+}
+
+img.icon {
+  margin-right: 8px;
+}
+
+.section-wrapper {
+  margin-top: 80px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.ellipsis {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.owl-carousel {
+  .owl-nav {
+    display: none;
+    pointer-events: none;
+
+    button {
+      background-color: rgba(168, 168, 168, 0.46) !important;
+      pointer-events: all;
+
+      span {
+        font-size: 5rem;
+      }
+
+      &.owl-prev {
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+      }
+
+      &.owl-next {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+      }
+
+      &.disabled {
+        opacity: 0.4;
+      }
+    }
+  }
+
+  &:hover {
+    .owl-nav {
+      display: flex;
+    }
+  }
+
+  &.hidden-slide {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .owl-carousel {
+    &:hover {
+      .owl-nav {
+        display: none;
+      }
+    }
+  }
+
+  .section-wrapper {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-wrapper {
+    margin-top: 32px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.hasErrorEmail {
+  .woocommerce-Input {
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+
+  &::after {
+    width: 100%;
+    content: "Email không hợp lệ !" !important;
+    color: #de3618;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.hasErrorPhone {
+  .woocommerce-Input {
+    &:focus {
+      border: 1px solid red;
+    }
+  }
+
+  &::after {
+    width: 100%;
+    content: "Số không hợp lệ !" !important;
+    color: #de3618;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+  }
+}
+
+.woocommerce-account {
+  .woocommerce-breadcrumb {
+    display: none;
+  }
+}
+
+.toast {
+  transform: translateX(100%);
+  position: fixed;
+  font-size: 1.8rem;
+  top: 100px;
+  right: 0;
+  z-index: 9999;
+  height: 70px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: slide-in 0.5s linear;
+
+  &.show {
+    transform: translateX(0);
+  }
+
+  &.success {
+    .toast-icon {
+      i {
+        color: green;
+
+        &::after {
+          content: "\f058";
+        }
+      }
+    }
+  }
+
+  &.error {
+    .toast-icon {
+      i {
+        color: #de3618;
+
+        &::after {
+          content: "\f06a";
+        }
+      }
+    }
+  }
+
+  .toast-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+
+    .toast-icon {
+      i {
+        font-size: 30px;
+      }
+    }
+
+    .toast-content {
+      .toast-title {
+        font-weight: bold;
+        color: #212b36;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: left;
+      }
+
+      .toast-message {
+        color: #212b36;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+      }
+    }
+
+    .toast-close {
+      cursor: pointer;
+      transition: all 0.3s linear;
+
+      &:hover {
+        color: #de3618;
+      }
+    }
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.title-mobile {
+  display: none;
+  padding: 16px !important;
+  align-items: center;
+  background: #fff;
+
+  #goBack {
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    &.active {
+      img {
+        filter: invert(13%) sepia(83%) saturate(4046%) hue-rotate(231deg)
+          brightness(95%) contrast(94%);
+      }
+    }
+
+    img {
+      width: 10px;
+      filter: invert(70%) sepia(18%) saturate(194%) hue-rotate(169deg)
+        brightness(90%) contrast(89%);
+    }
+  }
+
+  h3 {
+    margin: auto;
+    color: #212b36;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+.overlay-search {
+  background: transparent;
+  width: 100%;
+  height: 10000px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: none;
+
+  &.active {
+    display: block;
+  }
+}
+
+.archive {
+  section.loading {
+    display: none;
+  }
+}
+
+.loading {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba($color: #000000, $alpha: 0.15);
+  z-index: 99999999999;
+
+  .loading-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .f-loading {
+      position: absolute;
+      right: 0;
+      border: 2.5px solid #294adf;
+      border-right-color: transparent;
+      top: calc(50% - 14px);
+      left: calc(50% - 14px);
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+
+.required-input {
+  color: red;
+}
+
+.menu-mobile-custom-section {
+  nav.woocommerce-MyAccount-navigation {
+    max-width: unset;
+
+    ul {
+      .woocommerce-MyAccount-navigation-link {
+        a {
+          padding: 10px 16px 10px 0;
+        }
+      }
+    }
+  }
+}
+
+.blockOverlay {
+  display: none !important;
+}

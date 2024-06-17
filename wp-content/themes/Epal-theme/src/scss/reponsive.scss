@@ -1,0 +1,77 @@
+@media (max-width: 992px) {
+
+  .woocommerce-account {
+    background: #fff;
+
+    .woocommerce-breadcrumb {
+      display: flex;
+      max-width: 98.5%;
+      padding-left: 15px;
+      margin: auto;
+    }
+  }
+
+  .title-mobile {
+    display: flex;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+  }
+
+  .error404,
+  .page-template-tpl-cart,
+  .page-template-tpl-register,
+  .woocommerce-account,
+  .page-template-tpl-news,
+  .single-post {
+    .title-mobile {
+      display: none;
+    }
+
+    #menu-mobile-top {
+      padding-bottom: 16px;
+      margin-bottom: 0;
+
+      .content {
+        .top {
+          .logo {
+            .logo-img {
+              display: block !important;
+
+              .logo-main {
+                display: block;
+
+              }
+
+              #goBack {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .search,
+  .single-product,
+  .archive {
+    #menu-mobile-top {
+      .content {
+        .top {
+          .logo {
+            .logo-img {
+              display: block !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .title-mobile {
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.04);
+  }
+}

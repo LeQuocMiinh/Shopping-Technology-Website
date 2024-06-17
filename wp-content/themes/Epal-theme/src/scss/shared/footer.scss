@@ -1,0 +1,348 @@
+#footer {
+  margin-top: 60px;
+  padding-top: 68px;
+  background-color: #f6f6f6;
+
+  .logo {
+    margin-bottom: 24px;
+
+    img {
+      max-width: 250px;
+    }
+  }
+
+  .cols {
+    display: flex;
+    justify-content: space-around;
+
+    .col-item {
+      .col-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #212b36;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+      }
+
+      .col-content {
+        a {
+          margin-bottom: 16px;
+          color: #212b36;
+          display: block;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          &:hover {
+            color: $mainColor;
+          }
+        }
+      }
+    }
+  }
+
+  .socials {
+    margin-top: 45px;
+    padding: 27px 0;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+
+    a {
+      display: inline-block;
+      margin-right: 16px;
+      border-radius: 4px;
+      background-color: #fff;
+      padding: 11px 6px;
+      color: #212b36;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.comp_infor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  color: #212b36;
+  font-size: 16px;
+
+  .name {
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+  .text-normal {
+    font-size: 16px;
+
+    a {
+      color: #212b36;
+    }
+  }
+
+  .status {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  .time {
+    span {
+      display: inline-block;
+
+      &:not(:last-child) {
+        padding-right: 10px;
+        margin-right: 10px;
+        border-right: 1px solid #000;
+      }
+    }
+  }
+
+  .order-advise {
+    gap: 19px;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    width: fit-content;
+    box-shadow: 0px 0px 10px 0px #0000001a;
+
+    img {
+      max-width: 54px;
+    }
+
+    .text {
+      font-size: 16px;
+
+      .text-main {
+        font-weight: 500;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+
+      a {
+        color: #212b36;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 12px 0;
+  color: #fff;
+  font-size: 13px;
+
+  a {
+    color: #fff;
+    font-size: 13px;
+  }
+}
+
+.load-img {
+  position: fixed;
+  background: rgba(53, 53, 53, 0.74);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  z-index: 99999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: inherit;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.load-img-small {
+  position: absolute;
+  background: rgba($color: #242d37, $alpha: 0.3);
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  top: 0;
+  z-index: 99999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &.active {
+    opacity: 1;
+    visibility: inherit;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+//css icon phone
+#call-phone {
+  position: fixed;
+  right: 5px;
+  bottom: 80px;
+  z-index: 9999;
+
+  .phonering-alo-phone {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .phonering-alo-ph-circle {
+      width: 100%;
+      height: 100%;
+      background: #111;
+      border: 2px solid #111;
+      border-radius: 50%;
+      transition: all 0.5s;
+      transform-origin: 50% 50%;
+      animation: phonering-alo-circle-anim 1.2s infinite ease-in-out;
+    }
+
+    .phonering-alo-ph-circle-fill {
+      width: 85px;
+      height: 85px;
+      position: absolute;
+      background: #111;
+      border-radius: 50%;
+      transition: all 0.5s;
+      transform-origin: 50% 50%;
+      animation: phonering-alo-circle-fill-anim 2.3s infinite ease-in-out;
+    }
+
+    .phonering-alo-ph-img-circle {
+      width: 60px;
+      background: #111;
+      height: 60px;
+      position: absolute;
+      border-radius: 50%;
+      transition: all 0.5s;
+      transform-origin: 50% 50%;
+      animation: phonering-alo-circle-img-anim 1s infinite ease-in-out;
+
+      .link-phone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .numberphone {
+      width: 130px;
+      background: #111;
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 50%;
+      transform: translate(-30%, -50%);
+      padding: 6px 12px;
+      border-radius: 10px;
+      transition: visibility 0s linear 0.25s, opacity 0.25s;
+
+      .link-phone {
+        font-size: 14px;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .fa-caret-right {
+        position: absolute;
+        right: -5px;
+        top: 8px;
+        color: #111;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #footer,
+  .copyright {
+    display: none;
+  }
+}
+
+@keyframes phonering-alo-circle-anim {
+  0% {
+    transform: rotate(0) scale(0.5) skew(1deg);
+    opacity: 0.1;
+  }
+
+  30% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.1;
+  }
+}
+
+@keyframes phonering-alo-circle-fill-anim {
+  0% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.2;
+  }
+
+  50% {
+    transform: rotate(0) scale(1) skew(1deg);
+    opacity: 0.2;
+  }
+
+  100% {
+    transform: rotate(0) scale(0.7) skew(1deg);
+    opacity: 0.2;
+  }
+}
+
+@keyframes phonering-alo-circle-img-anim {
+  0% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+
+  10% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+
+  20% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+
+  30% {
+    transform: rotate(-25deg) scale(1) skew(1deg);
+  }
+
+  40% {
+    transform: rotate(25deg) scale(1) skew(1deg);
+  }
+
+  50% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+
+  100% {
+    transform: rotate(0) scale(1) skew(1deg);
+  }
+}
